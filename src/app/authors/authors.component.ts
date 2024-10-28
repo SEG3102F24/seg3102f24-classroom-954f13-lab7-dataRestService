@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { AuthorsService } from '../services/authors.service';
+import { AuthorsService } from './service/authors.service';
+import { ActivatedRoute, Router, Routes, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-authors',
   standalone: true,
-  imports: [FormsModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './authors.component.html',
   styleUrls: ['./authors.component.css']
 })

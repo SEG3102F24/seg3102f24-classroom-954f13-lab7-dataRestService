@@ -2,6 +2,7 @@
   <label for="authorId">Author ID:</label>
   <input type="text" id="authorId" [(ngModel)]="authorId" name="authorId" required />
   <button type="submit">Search</button>
+    <div>Give it a second or two after clicking search to get the result/error</div>
 </form>
 
 <div *ngIf="author">
